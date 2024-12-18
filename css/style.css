@@ -7,6 +7,11 @@
     --slate-900: hsl(218, 44%, 22%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Outfit", sans-serif;
     background-color: var(--slate-300);
@@ -21,7 +26,7 @@ body {
 .text-preset-02 {
     font-size: 15px;
     line-height: 140%;
-    letter-spacing: 0.2x;
+    letter-spacing: 0.2px;
     color: var(--slate-500);
 }
 
@@ -39,15 +44,24 @@ main {
     flex-direction: column;
     width: fit-content;
     align-items: center;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 16px;
+    border-radius: 20px;
 }
 .qr-container img {
     width: 288px;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 10px;
+    margin-bottom: 24px;
 }
 .text-container {
     width: 288px;
+    padding-left: 16px;
+    padding-right: 16px
+}
+.text-container h1 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.text-container p {
     text-align: center;
 }
